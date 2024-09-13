@@ -1,0 +1,79 @@
+.navbar-custom {
+  z-index: 10;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mx-auto {
+  position: relative;
+}
+
+.nav-link-custom {
+  position: relative;
+  left: 55vh;
+  top: -2vh;
+  margin: 20px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 500px;
+  overflow-x: hidden;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 3vh;
+  left: -10vh;
+  font-size: larger;
+  color: white;
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav-link-customm {
+  position: relative;
+  left: 145vh;
+  bottom: 9.7vh;
+}
+
+button {
+  position: relative;
+  left: 150vh;
+  bottom: 9.7vh;
+}
+
+.btn-custom {
+  background-color: white;
+  color: #ccd0ce;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+.btn-custom:hover {
+  background-color: #ccd0ce;
+  color: white;
+}
+
+.nav-link-custom,
+.nav-link-customm {
+  color: white !important;
+}
+
+.nav-link-custom::after {
+  color: #ccd0ce;
+  background-color: white;
+}

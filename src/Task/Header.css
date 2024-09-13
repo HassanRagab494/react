@@ -1,0 +1,36 @@
+.header-custom{
+    position: relative;
+    bottom: 20vh;
+    background-color: #CCD0CE;
+}
+
+.header-custom img{
+    position: relative;
+    left: 129vh;
+    top: 25.4vh;
+
+}
+
+.header-custom h1{
+    position: relative;
+    bottom: 40vh;
+    left: 15px;
+}
+
+
+.header-text{
+    position: relative;
+    left: 5vh;
+    color: white;
+}
+
+.btn1{
+    position: relative;
+   left: 3vh;
+   bottom: 35vh;
+   color: #aeb3b0;
+   background-color: #ffffff;
+   width: 6%;
+   border-radius: 0.25rem;
+   box-shadow: 0 4px 8px rgb(255, 255, 255);
+}

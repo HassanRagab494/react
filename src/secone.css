@@ -1,0 +1,98 @@
+/* استايلات القاعدة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* منع التمرير الأفقي */
+}
+
+.secone {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.left-section,
+.right-section {
+  flex: 1 1 100%; /* اجعل كلا القسمين يحتلان العرض الكامل للشاشة في الأجهزة الصغيرة */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.image-container {
+  margin-right: 20px;
+  flex-shrink: 0; /* اجعل الصورة ثابتة الحجم */
+}
+
+.image-container img {
+  max-width: 100%; /* اجعل الصورة تتناسب مع حجم القسم */
+  height: auto;
+}
+
+.text-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  margin: 10px 0;
+}
+
+.explore-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.top-right,
+.bottom-right,
+.full-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.top-right {
+  background-color: lightblue;
+}
+
+.bottom-right {
+  background-color: lightgreen;
+}
+
+.full-width {
+  background-color: lightcoral;
+  padding: 20px;
+}
+
+/* استايلات للأجهزة الكبيرة */
+@media (min-width: 768px) {
+  .left-section,
+  .right-section {
+    flex: 1; /* اجعل كلا القسمين يحتلان نصف الشاشة للأجهزة الأكبر */
+  }
+
+  .image-container img {
+    max-width: 150px; /* حجم ثابت للصورة في الأجهزة الأكبر */
+  }
+
+  .explore-button {
+    width: auto; /* تعديل عرض الزر ليكون تلقائيًا */
+  }
+
+  .text-content h1 {
+    font-size: 28px; /* تكبير حجم النص في الشاشات الأكبر */
+  }
+
+  .top-right,
+  .bottom-right {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+}
